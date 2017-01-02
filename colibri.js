@@ -153,9 +153,6 @@ var Colibri = (function () {
         if (typeof document !== 'undefined')
             return document.createElement('canvas');
 
-        if (typeof require !== 'undefined')
-            return new (require('canvas'))();
-
         throw new Error('Canvas creation failed');
 
     };
